@@ -44,7 +44,10 @@
 
 // Buttons
 // -------------------------
+$btnBackgroundHighlight:            darken($white, 7%);
+
 $btnPrimaryBackground:              #3fcaf4;
+$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%);
 
 $btnInfoBackground:                 #3c8bf3;
 $btnInfoBackgroundHighlight:        #0f6ce7;
