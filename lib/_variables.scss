@@ -220,6 +220,24 @@ $paginationBackground:                #fff !default;
 $paginationBorder:                    #ddd !default;
 $paginationActiveBackground:          #f5f5f5 !default;
 
+// Progressbar
+// -------------------------
+$progressBackground: #f9f9f9 !default;
+$progressBackgroundHighlight: #f5f5f5 !default;
+
+$progressbarBackground: #0480be !default;
+$progressbarBackgroundHighlight: #149bdf !default;
+
+$progressbarDangerBackground: #ee5f5b !default;
+$progressbarDangerBackgroundHighlight: #c43c35 !default;
+
+$progressbarInfoBackground: #5bc0de !default;
+$progressbarInfoBackgroundHighlight: #339bb9 !default;
+
+$progressbarSuccessBackground: #62c462 !default;
+$progressbarSuccessBackgroundHighlight: #57a957 !default;
+
+$progressbarStripedColor: #149bdf !default;
 
 // Hero unit
 // -------------------------
