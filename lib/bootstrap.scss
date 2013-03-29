@@ -36,18 +36,23 @@
 
 // Components: Buttons & Alerts
 @import "buttons";
+@import "buttons-alloy";
 @import "button-groups";
+@import "button-groups-alloy";
 @import "alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons
 
 // Components: Nav
 @import "navs";
+@import "navs-alloy";
 @import "navbar";
 @import "breadcrumbs";
 @import "pagination";
+@import "pagination-alloy";
 @import "pager";
 
 // Components: Popovers
 @import "modals";
+@import "modals-alloy";
 @import "tooltip";
 @import "popovers";
 
@@ -59,6 +64,7 @@
 @import "progress-bars-alloy";
 @import "accordion";
 @import "carousel";
+@import "carousel-alloy";
 @import "hero-unit";
 
 // Utility classes

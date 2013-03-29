@@ -6,6 +6,10 @@
 // --------
 
 // Outer container
+.progress-hiden {
+  display: none;
+}
+
 .progress.vertical {
   width: $baseLineHeight;
   height: 100%;

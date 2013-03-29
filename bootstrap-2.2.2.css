@@ -2927,7 +2927,7 @@ table th[class*="span"],
   height: auto;
 }
 
-.close {
+.close, .btn.close {
   float: right;
   font-size: 20px;
   font-weight: bold;
@@ -2937,7 +2937,9 @@ table th[class*="span"],
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
-.close:hover {
+.close:hover, .btn.close:focus,
+.btn.close:hover,
+.btn.close.active {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -2945,7 +2947,7 @@ table th[class*="span"],
   filter: alpha(opacity=40);
 }
 
-button.close {
+button.close, button.btn.close {
   padding: 0;
   cursor: pointer;
   background: transparent;
@@ -3318,6 +3320,26 @@ input[type="submit"].btn.btn-mini {
   text-decoration: none;
 }
 
+.btn-hidden {
+  display: none;
+}
+
+.btn.close:focus,
+.btn.close:focus,
+.btn.close:hover,
+.btn.close.active,
+.btn.active.close {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn.close:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 .btn-group {
   position: relative;
   display: inline-block;
@@ -3560,6 +3582,10 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0 0 6px 6px;
   -moz-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
+}
+
+.btn-group-hidden {
+  display: none;
 }
 
 .alert {
@@ -4022,6 +4048,10 @@ input[type="submit"].btn.btn-mini {
   text-decoration: none;
   background-color: transparent;
   cursor: default;
+}
+
+.tabbable-hidden {
+  display: none;
 }
 
 .navbar {
@@ -4710,6 +4740,10 @@ input[type="submit"].btn.btn-mini {
   font-size: 10.5px;
 }
 
+.pagination-hidden {
+  display: none;
+}
+
 .pager {
   margin: 20px 0;
   list-style: none;
@@ -4870,6 +4904,10 @@ input[type="submit"].btn.btn-mini {
 }
 .modal-footer .btn-block + .btn-block {
   margin-left: 0;
+}
+
+.modal-hidden {
+  display: none;
 }
 
 .tooltip {
@@ -5509,6 +5547,10 @@ a.label:hover, a.badge:hover {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
+.progress-hiden {
+  display: none;
+}
+
 .progress.vertical {
   width: 20px;
   height: 100%;
@@ -5679,6 +5721,10 @@ a.label:hover, a.badge:hover {
 
 .carousel-caption p {
   margin-bottom: 0;
+}
+
+.carousel-hidden {
+  display: none;
 }
 
 .hero-unit {
