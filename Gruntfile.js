@@ -38,8 +38,8 @@ module.exports = function(grunt) {
 
         clean: {
             build: [
-                'bootstrap-2.3.2.css', 'bootstrap-2.3.2.min.css',
-                'bootstrap-responsive-2.3.2.css', 'bootstrap-responsive-2.3.2.min.css'
+                'bootstrap-<%= pkg["version"] %>.css', 'bootstrap-<%= pkg["version"] %>.min.css',
+                'bootstrap-responsive-<%= pkg["version"] %>.css', 'bootstrap-responsive-<%= pkg["version"] %>.min.css'
             ],
             dist: [
                 'bootstrap.css', 'responsive.css',
@@ -56,10 +56,10 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('build', ['clean:build', 'compass', 'copy', 'clean:dist', 'cssmin']);
-
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+
+    grunt.registerTask('build', ['clean:build', 'compass', 'copy', 'clean:dist', 'cssmin']);
 };
