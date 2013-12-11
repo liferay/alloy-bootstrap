@@ -216,6 +216,7 @@ table {
 
   @page {
     margin: 2cm .5cm; }
+
   p,
   h2,
   h3 {
@@ -258,7 +259,7 @@ table {
 
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1950,6 +1951,21 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
+.btn-hidden {
+  display: none; }
+
+.btn.close:focus,
+.btn.close:focus,
+.btn.close:hover,
+.btn.close.active,
+.btn.active.close {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.btn.close:active {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -1973,6 +1989,7 @@ input[type="button"].btn-block {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -2870,6 +2887,9 @@ input[type="button"].btn-block {
 [data-toggle="buttons"] > .btn > input[type="checkbox"] {
   display: none; }
 
+.btn-group-hidden {
+  display: none; }
+
 .input-group {
   position: relative;
   display: table;
@@ -3096,6 +3116,9 @@ input[type="button"].btn-block {
   margin-top: -1px;
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
+
+.tabbable-hidden {
+  display: none; }
 
 .navbar {
   position: relative;
@@ -3530,6 +3553,9 @@ input[type="button"].btn-block {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px; }
 
+.pagination-hidden {
+  display: none; }
+
 .pager {
   padding-left: 0;
   margin: 20px 0;
@@ -3590,7 +3616,7 @@ input[type="button"].btn-block {
 .label-default {
   background-color: #999999; }
   .label-default[href]:hover, .label-default[href]:focus {
-    background-color: grey; }
+    background-color: gray; }
 
 .label-primary {
   background-color: #428bca; }
@@ -3759,24 +3785,28 @@ a.thumbnail.active {
 
   to {
     background-position: 0 0; } }
+
 @-moz-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
+
 @-o-keyframes progress-bar-stripes {
   from {
     background-position: 0 0; }
 
   to {
     background-position: 40px 0; } }
+
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
+
 .progress {
   overflow: hidden;
   height: 20px;
@@ -3842,6 +3872,35 @@ a.thumbnail.active {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
+
+.progress-hiden {
+  display: none; }
+
+.progress.vertical {
+  width: 1.42857;
+  height: 100%;
+  margin-right: 1.42857; }
+
+.progress .bar {
+  overflow: hidden; }
+
+.progress .bar p {
+  margin: 0;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
+
+.progress.vertical .bar {
+  width: 100%;
+  height: 0; }
+
+.progress.vertical.bottom {
+  position: relative; }
+
+.progress.vertical.bottom .bar {
+  position: absolute;
+  bottom: 0; }
 
 .media,
 .media-body {
@@ -4133,7 +4192,7 @@ a.list-group-item {
   padding: 9px;
   border-radius: 3px; }
 
-.close {
+.close, .btn.close {
   float: right;
   font-size: 21px;
   font-weight: bold;
@@ -4142,14 +4201,16 @@ a.list-group-item {
   text-shadow: 0 1px 0 white;
   opacity: 0.2;
   filter: alpha(opacity=20); }
-  .close:hover, .close:focus {
+  .close:hover, .btn.close:focus,
+  .btn.close:hover,
+  .btn.close.active, .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
     opacity: 0.5;
     filter: alpha(opacity=50); }
 
-button.close {
+button.close, button.btn.close {
   padding: 0;
   cursor: pointer;
   background: transparent;
@@ -4261,6 +4322,12 @@ button.close {
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); } }
+.modal-hidden {
+  display: none; }
+
+.modal-content {
+  overflow: hidden; }
+
 .tooltip {
   position: absolute;
   z-index: 1030;
@@ -4346,6 +4413,25 @@ button.close {
   right: 5px;
   border-width: 0 5px 5px;
   border-bottom-color: black; }
+
+.tooltip-help {
+  font-size: 14px; }
+  .tooltip-help .tooltip-inner {
+    color: #535353;
+    background-color: #fdfaec;
+    border: 1px solid #b0ad95;
+    max-width: 400px;
+    overflow-wrap: break-word;
+    text-align: left;
+    word-wrap: break-word; }
+  .tooltip-help.top .tooltip-arrow {
+    border-top-color: #b0ad95; }
+  .tooltip-help.right .tooltip-arrow {
+    border-right-color: #b0ad95; }
+  .tooltip-help.left .tooltip-arrow {
+    border-left-color: #b0ad95; }
+  .tooltip-help.bottom .tooltip-arrow {
+    border-bottom-color: #b0ad95; }
 
 .popover {
   position: absolute;
@@ -4453,6 +4539,9 @@ button.close {
     border-right-width: 0;
     border-left-color: white;
     bottom: -10px; }
+
+.popover-hidden {
+  display: none; }
 
 .carousel {
   position: relative; }
@@ -4574,7 +4663,7 @@ button.close {
     border-radius: 10px;
     cursor: pointer;
     background-color: #000 \9;
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
   .carousel-indicators .active {
     margin: 0;
     width: 12px;
@@ -4613,6 +4702,9 @@ button.close {
 
   .carousel-indicators {
     bottom: 20px; } }
+.carousel-hidden {
+  display: none; }
+
 .clearfix:before, .clearfix:after {
   content: " ";
   /* 1 */
@@ -4655,8 +4747,47 @@ button.close {
 .affix {
   position: fixed; }
 
+.hide {
+  display: none !important; }
+
+.show {
+  display: block !important; }
+
+.hide-accessible {
+  clip: rect(0 0 0 0) !important;
+  position: absolute !important;
+  /*Webkit and IE7 let clipped content change the scroll height of the page*/
+  /*Scale webkit to 0*/
+  -webkit-transform: scale(0);
+  -webkit-transform-origin-x: 0px;
+  -webkit-transform-origin-y: 0px;
+  /*Change IE7 to using fixed*/
+  *position: fixed !important;
+  /*...And reset back to absolute for IE6*/
+  _position: absolute !important; }
+
+.force-offset {
+  display: block !important;
+  position: absolute !important;
+  visibility: hidden !important; }
+
+.unselectable, .unselectable * {
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+.scroll-lock {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  width: 100%; }
+
 @-ms-viewport {
   width: device-width; }
+
 .visible-xs,
 tr.visible-xs,
 th.visible-xs,
