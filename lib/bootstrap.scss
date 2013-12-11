@@ -1,4 +1,5 @@
 // Core variables and mixins
+@import "variables-alloy"; // This override needs to load it's variables before bootstrap's
 @import "variables";
 @import "mixins";
 
@@ -14,17 +15,21 @@
 @import "tables";
 @import "forms";
 @import "buttons";
+@import "buttons-alloy";
 
 // Components
 @import "component-animations";
 @import "glyphicons";
 @import "dropdowns";
 @import "button-groups";
+@import "button-groups-alloy";
 @import "input-groups";
 @import "navs";
+@import "navs-alloy";
 @import "navbar";
 @import "breadcrumbs";
 @import "pagination";
+@import "pagination-alloy";
 @import "pager";
 @import "labels";
 @import "badges";
@@ -32,6 +37,7 @@
 @import "thumbnails";
 @import "alerts";
 @import "progress-bars";
+@import "progress-bars-alloy";
 @import "media";
 @import "list-group";
 @import "panels";
@@ -40,10 +46,15 @@
 
 // Components w/ JavaScript
 @import "modals";
+@import "modals-alloy";
 @import "tooltip";
+@import "tooltip-alloy";
 @import "popovers";
+@import "popovers-alloy";
 @import "carousel";
+@import "carousel-alloy";
 
 // Utility classes
 @import "utilities";
+@import "utilities-alloy";
 @import "responsive-utilities";

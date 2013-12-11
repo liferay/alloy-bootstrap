@@ -1,0 +1,25 @@
+//
+// Help tooltip
+// --------------------------------------------------
+
+// Base class
+.tooltip-help {
+  font-size: $help-tooltip-font-size;
+
+  // Wrapper for the tooltip content
+  .tooltip-inner {
+    color: $help-tooltip-color;
+    background-color: $help-tooltip-bg;
+    border: 1px solid $help-tooltip-border-color;
+    max-width: 400px;
+    overflow-wrap: break-word;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  // Arrows
+  &.top .tooltip-arrow    { border-top-color:    $help-tooltip-arrow-color; }
+  &.right .tooltip-arrow  { border-right-color:  $help-tooltip-arrow-color; }
+  &.left .tooltip-arrow   { border-left-color:   $help-tooltip-arrow-color; }
+  &.bottom .tooltip-arrow { border-bottom-color: $help-tooltip-arrow-color; }
+}
