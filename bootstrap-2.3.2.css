@@ -936,6 +936,7 @@ fieldset {
   padding: 0;
   margin: 0;
   border: 0;
+  min-width: 0;
 }
 
 legend {
@@ -3022,7 +3023,7 @@ button.close, button.btn.close {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#ededed));
   background-image: -webkit-linear-gradient(top, white, #ededed);
   background-image: -o-linear-gradient(top, white, #ededed);
-  background-image: linear-gradient(to bottom, #ffffff, #ededed);
+  background-image: linear-gradient(to bottom, white, #ededed);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEDEDED', GradientType=0);
   border-color: #ededed #ededed #c7c7c7;
@@ -4134,7 +4135,7 @@ input[type="submit"].btn.btn-mini {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#f2f2f2));
   background-image: -webkit-linear-gradient(top, white, #f2f2f2);
   background-image: -o-linear-gradient(top, white, #f2f2f2);
-  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-image: linear-gradient(to bottom, white, #f2f2f2);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF2F2F2', GradientType=0);
   border: 1px solid #d4d4d4;
@@ -5075,7 +5076,9 @@ input[type="submit"].btn.btn-mini {
   background-color: #fdfaec;
   border: 1px solid #b0ad95;
   max-width: 400px;
+  overflow-wrap: break-word;
   text-align: left;
+  word-wrap: break-word;
 }
 .tooltip-help.top .tooltip-arrow {
   border-top-color: #b0ad95;
@@ -5513,7 +5516,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(whitesmoke), to(#f9f9f9));
   background-image: -webkit-linear-gradient(top, whitesmoke, #f9f9f9);
   background-image: -o-linear-gradient(top, whitesmoke, #f9f9f9);
-  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+  background-image: linear-gradient(to bottom, whitesmoke, #f9f9f9);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF5F5F5', endColorstr='#FFF9F9F9', GradientType=0);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
