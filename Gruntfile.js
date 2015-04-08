@@ -21,6 +21,22 @@ module.exports = function(grunt) {
             }
         },
 
+        compress: {
+            zip: {
+                options: {
+                    mode: 'zip',
+                    pretty: true
+                },
+                files: [
+                    {
+                        src: [
+                            'lib/**'
+                        ]
+                    }
+                ]
+            }
+        },
+
         copy: {
             dist: {
                 files: [
@@ -43,6 +59,9 @@ module.exports = function(grunt) {
             ],
             dist: [
                 'bootstrap.css', 'responsive.css',
+            ],
+            zip: [
+                'alloy-bootstrap-<%= pkg["version"] %>.zip'
             ]
         },
 
@@ -53,13 +72,23 @@ module.exports = function(grunt) {
                     'bootstrap-responsive-<%= pkg["version"] %>.min.css': ['bootstrap-responsive-<%= pkg["version"] %>.css']
                 }
             }
+        },
+
+        zip: {
+            release: {
+                name: 'alloy-bootstrap-<%= pkg["version"] %>.zip'
+            }
         }
     });
 
+    grunt.loadTasks('tasks');
+
     grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.registerTask('build', ['clean:build', 'compass', 'copy', 'clean:dist', 'cssmin']);
+    grunt.registerTask('release', ['clean:zip', 'build', 'zip:release']);
 };
