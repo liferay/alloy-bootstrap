@@ -17,7 +17,10 @@
     }
   ]
   , "devDependencies": {
-      "grunt-contrib-compass": "0.5.0"
+      "async": "0.2.9"
+    , "command": "0.0.4"
+    , "grunt-contrib-compass": "0.5.0"
+    , "grunt-contrib-compress": "~0.5.2"
     , "grunt-contrib-copy": "0.4.0"
     , "grunt-contrib-clean": "0.5.0"
     , "grunt-contrib-cssmin": "0.6.1"
