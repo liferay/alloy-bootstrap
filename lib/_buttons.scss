@@ -197,6 +197,11 @@ input[type="submit"].btn {
   }
 }
 
+// Chrome has issue where images nested in buttons, nested in table cells, can cause contents to break out of buttons
+table .btn img {
+  max-width: none;
+}
+
 
 // Link buttons
 // --------------------------------------------------
