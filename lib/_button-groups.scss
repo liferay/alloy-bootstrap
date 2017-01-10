@@ -227,3 +227,6 @@
 .btn-group-vertical > .btn-large:last-child {
   @include border-radius(0 0 $borderRadiusLarge $borderRadiusLarge);
 }
+.btn-group-vertical > .btn-hidden {
+  display: none;
+}
