@@ -623,7 +623,7 @@ a:focus {
 /* line 647, lib/_mixins.scss */
 .row-fluid .offset10:first-child {
   margin-left: 85.10638%;
-  *margin-left: 85.0%;
+  *margin-left: 85%;
 }
 /* line 646, lib/_mixins.scss */
 .row-fluid .offset11 {
@@ -3552,7 +3552,7 @@ button.close, button.btn.close {
   cursor: pointer;
   color: #333;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  background-color: #f7f7f7;
+  background-color: #f8f8f8;
   background-image: -moz-linear-gradient(top, #fff, #ededed);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ededed));
   background-image: -webkit-linear-gradient(top, #fff, #ededed);
@@ -3736,7 +3736,7 @@ input[type="button"].btn-block {
 .btn-warning {
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #f9a732;
+  background-color: #faa732;
   background-image: -moz-linear-gradient(top, #fbb450, #f89406);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
   background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
@@ -3765,7 +3765,7 @@ input[type="button"].btn-block {
 .btn-danger {
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #eb1e10;
+  background-color: #ec1e11;
   background-image: -moz-linear-gradient(top, #ff3019, #cf0404);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff3019), to(#cf0404));
   background-image: -webkit-linear-gradient(top, #ff3019, #cf0404);
@@ -3794,7 +3794,7 @@ input[type="button"].btn-block {
 .btn-success {
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #b0c621;
+  background-color: #b0c722;
   background-image: -moz-linear-gradient(top, #bacd29, #a1bd17);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#bacd29), to(#a1bd17));
   background-image: -webkit-linear-gradient(top, #bacd29, #a1bd17);
@@ -3823,7 +3823,7 @@ input[type="button"].btn-block {
 .btn-info {
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #2a7eee;
+  background-color: #2a7fee;
   background-image: -moz-linear-gradient(top, #3c8bf3, #0f6ce7);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3c8bf3), to(#0f6ce7));
   background-image: -webkit-linear-gradient(top, #3c8bf3, #0f6ce7);
@@ -3908,7 +3908,12 @@ input[type="submit"].btn.btn-mini {
   *padding-bottom: 1px;
 }
 
-/* line 205, lib/_buttons.scss */
+/* line 201, lib/_buttons.scss */
+table .btn img {
+  max-width: none;
+}
+
+/* line 210, lib/_buttons.scss */
 .btn-link,
 .btn-link:active,
 .btn-link[disabled] {
@@ -3919,7 +3924,7 @@ input[type="submit"].btn.btn-mini {
   box-shadow: none;
 }
 
-/* line 212, lib/_buttons.scss */
+/* line 217, lib/_buttons.scss */
 .btn-link {
   border-color: transparent;
   cursor: pointer;
@@ -3929,7 +3934,7 @@ input[type="submit"].btn.btn-mini {
   border-radius: 0;
 }
 
-/* line 218, lib/_buttons.scss */
+/* line 223, lib/_buttons.scss */
 .btn-link:hover,
 .btn-link:focus {
   color: #005580;
@@ -3937,7 +3942,7 @@ input[type="submit"].btn.btn-mini {
   background-color: transparent;
 }
 
-/* line 224, lib/_buttons.scss */
+/* line 229, lib/_buttons.scss */
 .btn-link[disabled]:hover,
 .btn-link[disabled]:focus {
   color: #333;
@@ -4254,6 +4259,11 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 0 0 6px 6px;
   -moz-border-radius: 0 0 6px 6px;
   border-radius: 0 0 6px 6px;
+}
+
+/* line 230, lib/_button-groups.scss */
+.btn-group-vertical > .btn-hidden {
+  display: none;
 }
 
 /* line 6, lib/_button-groups-alloy.scss */
@@ -4839,7 +4849,7 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #f9f9f9;
+  background-color: #fafafa;
   background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
   background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
@@ -5929,23 +5939,21 @@ input[type="submit"].btn.btn-mini {
   background-color: #fdfaec;
   border: 1px solid #b0ad95;
   max-width: 400px;
-  overflow-wrap: break-word;
   text-align: left;
-  word-wrap: break-word;
 }
-/* line 21, lib/_tooltip-alloy.scss */
+/* line 19, lib/_tooltip-alloy.scss */
 .tooltip-help.top .tooltip-arrow {
   border-top-color: #b0ad95;
 }
-/* line 22, lib/_tooltip-alloy.scss */
+/* line 20, lib/_tooltip-alloy.scss */
 .tooltip-help.right .tooltip-arrow {
   border-right-color: #b0ad95;
 }
-/* line 23, lib/_tooltip-alloy.scss */
+/* line 21, lib/_tooltip-alloy.scss */
 .tooltip-help.left .tooltip-arrow {
   border-left-color: #b0ad95;
 }
-/* line 24, lib/_tooltip-alloy.scss */
+/* line 22, lib/_tooltip-alloy.scss */
 .tooltip-help.bottom .tooltip-arrow {
   border-bottom-color: #b0ad95;
 }
@@ -6423,7 +6431,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   overflow: hidden;
   height: 20px;
   margin-bottom: 20px;
-  background-color: #f6f6f6;
+  background-color: #f7f7f7;
   background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
   background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
@@ -6448,7 +6456,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   font-size: 12px;
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #0d90d1;
+  background-color: #0e90d2;
   background-image: -moz-linear-gradient(top, #149bdf, #0480be);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149bdf), to(#0480be));
   background-image: -webkit-linear-gradient(top, #149bdf, #0480be);
@@ -6500,7 +6508,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 
 /* line 93, lib/_progress-bars.scss */
 .progress-danger .bar, .progress .bar-danger {
-  background-color: #dd514b;
+  background-color: #dd514c;
   background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#c43c35));
   background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
@@ -6522,7 +6530,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 
 /* line 101, lib/_progress-bars.scss */
 .progress-success .bar, .progress .bar-success {
-  background-color: #5db95d;
+  background-color: #5eb95e;
   background-image: -moz-linear-gradient(top, #62c462, #57a957);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#57a957));
   background-image: -webkit-linear-gradient(top, #62c462, #57a957);
@@ -6566,7 +6574,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 
 /* line 117, lib/_progress-bars.scss */
 .progress-warning .bar, .progress .bar-warning {
-  background-color: #f9a732;
+  background-color: #faa732;
   background-image: -moz-linear-gradient(top, #fbb450, #f89406);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
   background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
