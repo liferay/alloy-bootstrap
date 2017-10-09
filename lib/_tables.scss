@@ -9,14 +9,14 @@
 table {
   max-width: 100%;
   background-color: $tableBackground;
-  border-collapse: collapse;
-  border-spacing: 0;
+  border-collapse: separate;
 }
 
 // BASELINE STYLES
 // ---------------
 
 .table {
+  border-collapse: collapse;
   width: 100%;
   margin-bottom: $baseLineHeight;
   // Cells
